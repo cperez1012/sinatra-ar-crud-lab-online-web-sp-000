@@ -1,6 +1,6 @@
 <h1>Edit your article:</h1>
 <form action="/articles/<%= @article.id %>" method="post">
-  <input id="hidden" type="hidden" name="_method" value="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
   <label for="title" name="title">Title:</label>
    <input type="text" id="title" name="title" value="<%= @article.title %>">
    <label for="content" name="content">Content:</label>
